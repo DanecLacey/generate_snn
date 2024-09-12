@@ -5,7 +5,8 @@ Sparse neural networks (SNNs) are neural networks which have some degree of "zer
 In an effort to study these seemingly random sparsity patterns, this repo will serve as a collection of techniques to generate SNNs. After generation, we can save the sparse weight matrices and study them in isolation. This should aid in insights and understanding of performance of central kernels in nerual network training and inference. Contributions are welcome.
 
 Example:\
-`python generators/example.py matrices/layer2_50_sparsity.mtx && python scripts/mm2sparsityPattern.py matrices/layer2_50_sparsity.mtx`
+`export MAT_NAME=layer2_50_sparsity.mtx`\
+`python generators/example.py matrices/${MAT_NAME} && python scripts/mm2sparsityPattern.py matrices/${MAT_NAME}`
 
 ### Usage
 `generators/`\
